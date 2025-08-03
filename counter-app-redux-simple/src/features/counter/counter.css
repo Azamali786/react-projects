@@ -1,0 +1,102 @@
+/* src/features/counter/counter.css */
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.counter-card {
+  background-color: #fde68a; /* bg-amber-200 */
+  width: 400px;
+  height: 500px;
+  border-radius: 1.5rem; /* rounded-3xl */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); /* shadow-lg */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; /* p-8 */
+}
+
+.counter-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  color: #1f2937; /* text-gray-800 */
+  margin: 2.5rem 0; /* my-10 */
+}
+
+.counter-display {
+  font-size: 6rem; /* text-9xl */
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 2rem; /* gap-8 */
+  justify-content: center;
+  width: 100%;
+}
+
+.counter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700;
+  color: white;
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
+
+.counter-btn:hover {
+  transform: scale(1.05);
+}
+
+.counter-btn:active {
+  transform: scale(0.95);
+}
+
+.counter-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.5); /* focus:ring-4 focus:ring-green-300 */
+}
+
+/* Specific button colors */
+.btn-decrement {
+  background-color: #ef4444; /* bg-red-500 */
+}
+
+.btn-decrement:hover {
+  background-color: #dc2626; /* hover:bg-red-600 */
+}
+
+.btn-increment {
+  background-color: #10b981; /* bg-green-500 */
+}
+
+.btn-increment:hover {
+  background-color: #059669; /* hover:bg-green-600 */
+}
+
+.btn-reset {
+  background-color: #3b82f6; /* bg-blue-500 */
+  font-size: 1.25rem; /* text-xl */
+}
+
+.btn-reset:hover {
+  background-color: #2563eb; /* hover:bg-blue-600 */
+}
+
+/* Disabled state */
+.counter-btn:disabled {
+  background-color: #9ca3af; /* bg-gray-400 */
+  cursor: not-allowed;
+  transform: none;
+}
